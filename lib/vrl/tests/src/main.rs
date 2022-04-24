@@ -30,6 +30,7 @@ static AST_ONLY_TESTS: &[&str] = &[
     //
     // See: https://github.com/vectordotdev/vector/issues/12366
     "expressions/function_call/closure scope inheritance",
+    // `for_each
     "rfcs/8381/check property on variable sized array of objects",
     "rfcs/8381/convert object to specific string format",
     "rfcs/8381/converting a single metric into multiple metrics",
@@ -42,7 +43,16 @@ static AST_ONLY_TESTS: &[&str] = &[
     "functions/for_each/recursively iterate object",
     "functions/for_each/iterate array",
     "functions/for_each/recursively iterate array",
-    // end: iteration-specific tests
+    // `map_keys`
+    "rfcs/8381/add prefix to all keys",
+    "rfcs/8381/de dot keys for elasticsearch",
+    "rfcs/8381/add prefix to all keys",
+    "rfcs/8381/de dot keys for elasticsearch",
+    "rfcs/8381/remove prefix from keys",
+    "rfcs/8381/trim a character from all keys",
+    "functions/map_keys (closure)/map object keys",
+    "functions/map_keys/map object keys",
+    "functions/map_keys/recursively map object keys",
 ];
 
 #[derive(Parser, Debug)]
